@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 绝对路径 -->
+<!-- <form action="http://localhost:8888/sl314servlet_annotation/LoginServlet" method="post"> -->
+<!--<form action="/sl314servlet_annotation/LoginServlet" method="post">  --><!-- /:ip:port -->
+
+<!-- 相对路径 -->
+<form action="Login" method="post">
+用户名：<input type="text"  name="user"><br/>
+密码：<input type="password" name="password"><br/>
+爱好:<br/>
+			<input type="checkbox" name="hobby" value="eatting" />吃饭
+			<input type="checkbox" name="hobby" value="sleepping"  />睡觉
+			<input type="checkbox" name="hobby" value="study" />学习
+			<input type="checkbox" name="hobby" value="playing"  checked="checked"/>打游戏
+			<input type="checkbox" name="hobby" value="shopping"  checked="checked"/>购物
+
+<input type="submit" value="登录">
+</form>
+</body>
+</html>

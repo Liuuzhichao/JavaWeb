@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function ma(){
+	//alert("cc");
+	var img = document.getElementById("im");
+	img.src = "Img?date="+new Date();
+}
+</script>
+</head>
+<body>
+
+<form action="LoginServlet5" method="post">
+用户名：<input type="text"  name="user"><br/>
+密码：<input type="password" name="password"><br/>
+<input type="text" name="code"><img src="Img" id="im">
+<a href="javascript:void(0)" onclick="ma()">看不清,请刷新</a>
+<br/>
+<input type="submit" value="登录" name="btn">
+</form>
+</body>
+</html>
